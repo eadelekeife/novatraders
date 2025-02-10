@@ -11,7 +11,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--main)"
       },
+      gridTemplateColumns: {
+        "1/2": "1fr 2fr"
+      },
+      fontFamily: {
+        worksans: "Work Sans"
+      }
     },
   },
   plugins: [],

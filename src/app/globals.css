@@ -1,21 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #FFF;
   --foreground: #171717;
+  --gray-text-color: #667085;
+  --text-color: #0B1416;
+  --accent-color: #F963AB;
+  --bold-color: #0A2A30;
+  --black: #000000;
+  --offwhite: #567C82;
+  --main: #CFF34E;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #fff;
     --foreground: #ededed;
   }
 }
 
 body {
   color: var(--foreground);
+  color: var(--text-color);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", serif;
+  font-family: "Plus Jakarta Sans", serif;
+  font-family: "Work Sans", serif;
+  max-width: 1800px;
+  margin: 0px auto;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", serif;
+  font-family: "Plus Jakarta Sans", serif;
+}
+
+.ant-tabs-tabpane p,
+.ant-modal-body label {
+  font-family: "Work Sans", serif;
+}
+
+.ant-tabs-tabpane h4,
+.ant-modal-body button,
+.ant-modal-body h1,
+.ant-modal-body h2 .ant-modal-body h3 {
+  font-family: "Plus Jakarta Sans", serif !important;
+}
+
+.br-img {
+  background: url("/farm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
 }
