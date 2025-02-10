@@ -9,7 +9,7 @@ import { ImArrowUpRight2 } from "react-icons/im";
 import DisplayLayout from "@/components/layout";
 
 
-export function Home() {
+export function Homepage() {
   return (
     <div>
       <DisplayLayout>
@@ -162,7 +162,7 @@ export function Home() {
     </div>
   );
 }
-export default function HomePage() {
+export default function Home() {
   return (
     <div>
       <div className="h-screen flex items-center justify-center">
