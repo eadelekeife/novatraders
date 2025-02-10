@@ -7,8 +7,8 @@ import { GrLinkedin } from "react-icons/gr";
 const Footer = () => {
     return (
         <div>
-            <div className="px-20 py-20">
-                <div className="grid grid-cols-2 gap-10">
+            <div className="px-5 md:px-20 py-20">
+                <div className="flex flex-col md:grid grid-cols-2 gap-10">
                     <div>
                         <div>
                             <h4 className="mb-5 text-2xl font-bold">Novatraders</h4>
@@ -18,7 +18,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="grid grid-cols-3 gap-10">
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
                             <div>
                                 <h5 className="mb-5 text-base tracking-wide font-bold">Company</h5>
                                 <ul className="flex flex-col gap-3">
