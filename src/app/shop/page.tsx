@@ -1,10 +1,4 @@
 import DisplayLayout from "@/components/layout";
-import { Input } from "antd";
-import { RiFacebookCircleFill } from "react-icons/ri";
-import { TbBrandInstagram } from "react-icons/tb";
-import { BsLinkedin } from "react-icons/bs";
-import Link from "next/link";
-
 
 export default function Home() {
     return (
