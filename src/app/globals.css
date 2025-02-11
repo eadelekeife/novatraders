@@ -71,3 +71,11 @@ h6 {
   background-size: cover;
   background-position: center bottom;
 }
+
+.ant-drawer-header {
+  display: none !important;
+}
+
+.ant-drawer-content-wrapper {
+  width: 100% !important;
+}

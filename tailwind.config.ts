@@ -14,12 +14,13 @@ export default {
         primary: "var(--main)"
       },
       gridTemplateColumns: {
-        "1/2": "1fr 2fr"
+        "1/2": "1fr 2fr",
+        "1/1.5": "1fr 1.5fr"
       },
       fontFamily: {
         worksans: "Work Sans"
       }
-    },
+    }
   },
   plugins: [],
 } satisfies Config;

@@ -6,11 +6,16 @@ import { TbBrandInstagram } from "react-icons/tb";
 import { BsLinkedin } from "react-icons/bs";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { useEffect, useState } from "react";
+import { Drawer } from "antd";
+import { FaTimes } from "react-icons/fa";
 
 
 const Navigation = () => {
 
     const [fixedNav, setFixed] = useState(false);
+    const [openDrawer, setOpenDrawer] = useState(false);
+
+    const toggleDisplayDrawer = () => setOpenDrawer(!openDrawer);
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -36,16 +41,16 @@ const Navigation = () => {
                 <div className="hidden md:block">
                     <ul className="flex gap-10">
                         <li>
-                            <Link className={`${!fixedNav ? "text-white" : "text-black"} `} href="">Home</Link>
+                            <Link className={`${!fixedNav ? "text-white" : "text-black"} `} href="/">Home</Link>
                         </li>
                         <li>
-                            <Link className={`${!fixedNav ? "text-white" : "text-black"} `} href="">About Us</Link>
+                            <Link className={`${!fixedNav ? "text-white" : "text-black"} `} href="/about">About Us</Link>
                         </li>
                         <li>
-                            <Link className={`${!fixedNav ? "text-white" : "text-black"} `} href="">Shop</Link>
+                            <Link className={`${!fixedNav ? "text-white" : "text-black"} `} href="/shop">Shop</Link>
                         </li>
                         <li>
-                            <Link className={`${!fixedNav ? "text-white" : "text-black"} `} href="">Contact Us</Link>
+                            <Link className={`${!fixedNav ? "text-white" : "text-black"} `} href="contact">Contact Us</Link>
                         </li>
                     </ul>
                 </div>
@@ -75,9 +80,32 @@ const Navigation = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="block md:hidden">
+                <div onClick={toggleDisplayDrawer} className="block md:hidden">
                     <HiMenuAlt3 className={`text-4xl ${!fixedNav ? "text-white" : "text-black"}`} />
                 </div>
+                <Drawer open={openDrawer} onClose={toggleDisplayDrawer}>
+                    <div className="relative h-full">
+                        <div className="pb-10 flex items-center justify-between">
+                            <Link href="/">
+                                <div className="flex gap-3 items-center">
+                                    <div className="h-10 md:h-14 w-16 md:w-20 bg-primary"></div>
+                                    <h4 className={`font-bold text-xl text-black`}>NovaApp</h4>
+                                </div>
+                            </Link>
+                            <FaTimes onClick={toggleDisplayDrawer} className="text-[#FF0000] text-3xl" />
+                        </div>
+                        <ul className="flex flex-col w-full gap-10">
+                            <li className="text-base text-black font-worksans">
+                                <Link href="/">Home</Link></li>
+                            <li className="text-base text-black font-worksans">
+                                <Link href="/about">About Us</Link></li>
+                            <li className="text-base text-black font-worksans">
+                                <Link href="/shop">Shop</Link></li>
+                            <li className="text-base text-black font-worksans">
+                                <Link href="/contact"> Contact Us</Link></li>
+                        </ul>
+                    </div >
+                </Drawer >
             </div>
         </div>
     )
