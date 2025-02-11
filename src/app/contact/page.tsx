@@ -13,7 +13,7 @@ export default function Home() {
                                 <div>
                                     <h4 className="text-3xl md:text-5xl mb-4 md:mb-8 font-black">Get in touch</h4>
                                     <p className="text-base md:text-lg mb-14 w-[90%]">
-                                        Get in touch to learn more about how I can help you turn data into meaningful insights. Let's work together to unlock the potential of your data and drive better decisions.
+                                        Get in touch to learn more about how I can help you turn data into meaningful insights. Let&apos;s work together to unlock the potential of your data and drive better decisions.
                                     </p>
                                     <div className="flex justify-between items-center">
                                         <div>
