@@ -28,18 +28,18 @@ export default function Contact() {
                   <div className="flex justify-between items-center">
                     <div>
                       <h5 className="text-sm md:text-base text-black mb-4 opacity-80">{t.emailAddress}</h5>
-                      <h3 className="text-lg md:text-2xl font-medium">help@novatraders.com</h3>
+                      <a href="mailTo:help@novatraders.com" className="text-lg md:text-2xl font-medium">help@novatraders.com</a>
                     </div>
                     <div></div>
                   </div>
                   <div className="mt-7 md:mt-20 flex flex-col md:flex-row md:items-center justify-between md:w-[85%]">
                     <div>
                       <h5 className="text-sm md:text-base text-black mb-4 opacity-80">{t.phone}</h5>
-                      <h4 className="text-black text-lg md:text-xl font-medium">(+234) 807 199 8237</h4>
+                      <a href="tel:+380936018625" className="text-black text-lg md:text-xl font-medium">(+380) 936 01 8625</a>
                     </div>
                     <div className="mt-7 md:mt-0">
                       <h5 className="text-black mb-4 text-sm md:text-base opacity-80">{t.location}</h5>
-                      <h4 className="text-black text-lg md:text-xl font-medium">Lagos, Nigeria.</h4>
+                      <h4 className="text-black text-lg md:text-xl font-medium">Donetsk, Ukraine.</h4>
                     </div>
                   </div>
                 </div>

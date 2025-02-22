@@ -13,7 +13,7 @@ const Footer = () => {
                             </div>
                             <div>
                                 <h5 className="text-sm md:text-base text-white mb-2 md:mb-4">Phone number</h5>
-                                <a className="text-white text-lg md:text-2xl" href="mailTo:+2348132277316" target="_blank">+2348132277316</a>
+                                <a className="text-white text-lg md:text-2xl" href="mailTo:+380936018625" target="_blank">(+380) 936 01 8625</a>
                             </div>
                         </div>
                     </div>
