@@ -215,20 +215,22 @@ const Navigation = () => {
                                     <Dropdown menu={{ items }}>
                                         <a onClick={(e) => e.preventDefault()}>
                                             <Space>
-                                                {
-                                                    currentCountry === "en" ?
-                                                        <Image src={USImg} alt="USImg" className="w-auto h-[20px]" />
-                                                        : currentCountry === "ru" ?
-                                                            <Image src={RuImg} alt="USImg" className="w-auto h-[20px]" />
-                                                            : currentCountry === "ar" ?
-                                                                <Image src={ArImg} alt="USImg" className="w-auto h-[20px]" />
-                                                                :
-                                                                <Image src={FrImg} alt="USImg" className="w-auto h-[20px]" />
-                                                }
+                                                <div className="flex items-center">
+                                                    {
+                                                        currentCountry === "en" ?
+                                                            <Image src={USImg} alt="USImg" className="w-auto h-[20px]" />
+                                                            : currentCountry === "ru" ?
+                                                                <Image src={RuImg} alt="USImg" className="w-auto h-[20px]" />
+                                                                : currentCountry === "ar" ?
+                                                                    <Image src={ArImg} alt="USImg" className="w-auto h-[20px]" />
+                                                                    :
+                                                                    <Image src={FrImg} alt="USImg" className="w-auto h-[20px]" />
+                                                    }
+                                                    <MdKeyboardArrowDown className="text-2xl" />
+                                                </div>
                                             </Space>
                                         </a>
                                     </Dropdown>
-                                    <MdKeyboardArrowDown className="text-2xl" />
                                 </div>
                             </div>
                         </div >
