@@ -5,37 +5,10 @@ import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/translations';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
-export function Contact() {
-  const { language } = useLanguage();
-  const t = translations[language].contact;
-
-  return (
-    <div>
-      <LanguageSwitcher />
-      <h1>{t.title}</h1>
-      <form>
-        <div>
-          <label>{t.name}</label>
-          <input type="text" />
-        </div>
-        <div>
-          <label>{t.email}</label>
-          <input type="email" />
-        </div>
-        <div>
-          <label>{t.message}</label>
-          <textarea></textarea>
-        </div>
-        <button type="submit">{t.submit}</button>
-      </form>
-    </div>
-  );
-}
-
 import DisplayLayout from "@/components/layout";
 import { Input } from "antd";
 
-export default function Home() {
+export default function Contact() {
 
   const { language } = useLanguage();
   const t = translations[language].contact;
