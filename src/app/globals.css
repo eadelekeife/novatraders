@@ -67,9 +67,10 @@ h6 {
 
 .hero {
   background: linear-gradient(to top right, rgba(0, 0, 0.7), rgba(0, 0, 0, .2), rgba(0, 0, 0, .1)), url("/hero.jpg");
+  background: linear-gradient(to top right, rgba(0, 0, 0.7), rgba(0, 0, 0, .5), rgba(0, 0, 0, .1)), url("/hero_new.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center top;
 }
 
 .ant-drawer-header {
@@ -78,4 +79,37 @@ h6 {
 
 .ant-drawer-content-wrapper {
   width: 100% !important;
+}
+
+.about-bg {
+  background: linear-gradient(to top right, rgba(0, 0, 0.7), rgba(0, 0, 0, .5), rgba(0, 0, 0, .1)), url("/about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.ant-drawer-body {
+  padding: 0px !important;
+}
+
+.ant-dropdown-menu {
+  /* background: transparent !important; */
+  z-index: 1000;
+}
+
+.nav .ant-dropdown-menu {
+  background: transparent !important;
+}
+
+.ant-dropdown-menu .ant-dropdown-menu-item {
+  padding: 10px !important;
+}
+
+.ant-dropdown {
+  background: transparent !important;
+  font-family: "Work Sans", serif !important;
+}
+
+.nav .ant-dropdown {
+  background: transparent !important;
 }

@@ -1,14 +1,78 @@
 import Link from "next/link";
-import { BsFacebook } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
-import { BsTwitterX } from "react-icons/bs";
-import { GrLinkedin } from "react-icons/gr";
 
 const Footer = () => {
     return (
         <div>
-            <div className="px-5 md:px-20 py-20">
-                <div className="flex flex-col md:grid grid-cols-2 gap-10">
+            <div className="px-5 md:px-20 pt-20 pb-10 bg-[#0B1416]">
+                <div className="flex flex-col md:flex-row gap-10 md:gap-0 flex justify-between">
+                    <div>
+                        <div className="flex flex-col md:flex-row gap-10 md:gap-20">
+                            <div>
+                                <h5 className="text-sm md:text-base text-white mb-2 md:mb-4">Email address</h5>
+                                <a className="text-white text-lg md:text-2xl" href="mailTo:help@novatradar.com" target="_blank">help@novatradar.com</a>
+                            </div>
+                            <div>
+                                <h5 className="text-sm md:text-base text-white mb-2 md:mb-4">Phone number</h5>
+                                <a className="text-white text-lg md:text-2xl" href="mailTo:+2348132277316" target="_blank">+2348132277316</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex gap-40 text-white">
+                        <div>
+                            <h5 className="mb-5 text-base tracking-wide font-bold">Company</h5>
+                            <ul className="flex flex-col gap-5">
+                                <li>
+                                    <Link href="" className="text-sm opacity-80">Home</Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="text-sm opacity-80">About Us</Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="text-sm opacity-80">Shop</Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="text-sm opacity-80">Contact Us</Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 className="mb-5 text-base tracking-wide font-bold">Shop</h5>
+                            <ul className="flex flex-col gap-5">
+                                <li>
+                                    <Link href="" className="text-sm opacity-80">Home</Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="text-sm opacity-80">About Us</Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="text-sm opacity-80">Shop</Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="text-sm opacity-80">Contact Us</Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="border border border-white opacity-20 mt-16"></div>
+                <div className="flex flex-col md:flex-row gap-10 md:gap-0 justify-between md:items-center mt-14">
+                    <div>
+                        <p className="text-white text-sm opacity-80">
+                            &copy; {new Date().getFullYear()} &mdash; Copyright Novatradar
+                        </p>
+                    </div>
+                    <div>
+                        <ul className="flex gap-20 md:gap-10">
+                            <li>
+                                <Link href="" className="text-sm text-white opacity-80">Privacy Policies</Link>
+                            </li>
+                            <li>
+                                <Link href="" className="text-sm text-white opacity-80">Terms of Use</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                {/* <div className="flex flex-col md:grid grid-cols-2 gap-10 text-white">
                     <div>
                         <div>
                             <h4 className="mb-5 text-2xl font-bold">Novatraders</h4>
@@ -21,41 +85,41 @@ const Footer = () => {
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
                             <div>
                                 <h5 className="mb-5 text-base tracking-wide font-bold">Company</h5>
-                                <ul className="flex flex-col gap-3">
+                                <ul className="flex flex-col gap-5">
                                     <li>
-                                        <Link href="" className="text-sm">Home</Link>
+                                        <Link href="" className="text-sm opacity-80">Home</Link>
                                     </li>
                                     <li>
-                                        <Link href="" className="text-sm">About Us</Link>
+                                        <Link href="" className="text-sm opacity-80">About Us</Link>
                                     </li>
                                     <li>
-                                        <Link href="" className="text-sm">Shop</Link>
+                                        <Link href="" className="text-sm opacity-80">Shop</Link>
                                     </li>
                                     <li>
-                                        <Link href="" className="text-sm">Contact Us</Link>
+                                        <Link href="" className="text-sm opacity-80">Contact Us</Link>
                                     </li>
                                 </ul>
                             </div>
                             <div>
-                                <h5 className="mb-5 text-base tracking-wide font-bold">Company</h5>
-                                <ul className="flex flex-col gap-3">
+                                <h5 className="mb-5 text-base tracking-wide font-bold">Shop</h5>
+                                <ul className="flex flex-col gap-5">
                                     <li>
-                                        <Link href="" className="text-sm">Home</Link>
+                                        <Link href="" className="text-sm opacity-80">Home</Link>
                                     </li>
                                     <li>
-                                        <Link href="" className="text-sm">About Us</Link>
+                                        <Link href="" className="text-sm opacity-80">About Us</Link>
                                     </li>
                                     <li>
-                                        <Link href="" className="text-sm">Shop</Link>
+                                        <Link href="" className="text-sm opacity-80">Shop</Link>
                                     </li>
                                     <li>
-                                        <Link href="" className="text-sm">Contact Us</Link>
+                                        <Link href="" className="text-sm opacity-80">Contact Us</Link>
                                     </li>
                                 </ul>
                             </div>
                             <div>
                                 <h5 className="mb-5 text-base tracking-wide font-bold">Reach out to us</h5>
-                                <div className="flex gap-3 flex-col">
+                                <div className="flex gap-5 flex-col">
                                     <div className="flex gap-5">
                                         <BsFacebook className="text-lg" />
                                         <BsInstagram className="text-lg" />
@@ -65,10 +129,10 @@ const Footer = () => {
                                     <div>
                                         <ul className="">
                                             <li>
-                                                <Link href="" className="text-sm">0813 227 7316</Link>
+                                                <Link href="" className="text-sm opacity-80">0813 227 7316</Link>
                                             </li>
                                             <li>
-                                                <Link href="" className="text-sm">eadelekeife@gmail.com</Link>
+                                                <Link href="" className="text-sm opacity-80">eadelekeife@gmail.com</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -77,21 +141,23 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-between mt-20">
+                <div className="flex justify-between items-center mt-20">
                     <div>
-                        &copy; {new Date().getFullYear()} &mdash; Copyright
+                        <p className="text-white text-sm opacity-80">
+                            &copy; {new Date().getFullYear()} &mdash; Copyright Novatradar
+                        </p>
                     </div>
                     <div>
                         <ul className="flex gap-10">
                             <li>
-                                <Link href="">Privacy Policies</Link>
+                                <Link href="" className="text-sm text-white opacity-80">Privacy Policies</Link>
                             </li>
                             <li>
-                                <Link href="">Terms of Use</Link>
+                                <Link href="" className="text-sm text-white opacity-80">Terms of Use</Link>
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

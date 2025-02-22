@@ -15,7 +15,11 @@ export default {
       },
       gridTemplateColumns: {
         "1/2": "1fr 2fr",
-        "1/1.5": "1fr 1.5fr"
+        "1/3": "1fr 3fr",
+        "3/1": "3fr 1fr",
+        "2/1": "2fr 1fr",
+        "1/1.5": "1fr 1.5fr",
+        "1/1.5/1.5": "1.5fr 3.5fr 1.5fr"
       },
       fontFamily: {
         worksans: "Work Sans"

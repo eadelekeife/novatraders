@@ -1,47 +1,44 @@
+'use client';
+
 import DisplayLayout from "@/components/layout";
 
+import AboutImg from "@/assets/images/about.jpg";
+import Image from "next/image";
+// import { useLanguage } from "@/context/LanguageContext";
+// import { translations } from "@/translations";
 
 export default function Home() {
+    // const { language } = useLanguage();
+    // const t = translations[language].about;
     return (
         <div>
             <DisplayLayout>
                 <>
-                    <div className="bg-black h-[20rem] w-full"></div>
-                    <div className="px-5 md:px-20 pt-20 pb-16 md:py-32">
-                        <div className="md:w-[70rem] mx-auto">
-                            <h3 className="text-3xl md:text-5xl font-bold text-center mb-5 md:w-[70%] mx-auto leading-normal">
-                                Improving Farming With Innovative Ideas For The Future.
-                            </h3>
-                            <div className="h-[15rem] md:h-[30rem] w-full rounded-3xl bg-black"></div>
-                            <div className="mt-10">
-                                <div className="flex flex-col md:grid grid-cols-2 gap-14 gap-y-10">
-                                    <p className="text-base leading-loose">
-                                        Sura Vision - is a trailblazing investment firm that envisions a future of innovation and transformative impact. Our journey began with a passionate group of visionary investors who saw the immense potential in supporting startups that challenge the status quo and drive positive change in various industries.
-                                    </p>
-                                    <p className="text-base leading-loose">
-                                        Sura Vision - is a trailblazing investment firm that envisions a future of innovation and transformative impact. Our journey began with a passionate group of visionary investors who saw the immense potential in supporting startups that challenge the status quo and drive positive change in various industries.
-                                    </p>
-                                    <p className="text-base leading-loose">
-                                        Sura Vision - is a trailblazing investment firm that envisions a future of innovation and transformative impact. Our journey began with a passionate group of visionary investors who saw the immense potential in supporting startups that challenge the status quo and drive positive change in various industries.
-                                    </p>
-                                    <p className="text-base leading-loose">
-                                        Sura Vision - is a trailblazing investment firm that envisions a future of innovation and transformative impact. Our journey began with a passionate group of visionary investors who saw the immense potential in supporting startups that challenge the status quo and drive positive change in various industries.
-                                    </p>
-                                </div>
-                                <div className="flex flex-col md:flex-row gap-10 md:gap-0 justify-between items-center text-center mt-20 md:w-[70%] mx-auto">
-                                    <div>
-                                        <h3 className="font-bold mb-5 text-4xl">2025</h3>
-                                        <p className="text-base">Founded In</p>
-                                    </div>
-                                    <div>
-                                        <h3 className="font-bold mb-5 text-4xl">500+</h3>
-                                        <p className="text-base">Farmers Supported</p>
-                                    </div>
-                                    <div>
-                                        <h3 className="font-bold mb-5 text-4xl">2025</h3>
-                                        <p className="text-base">Farmers Supported</p>
-                                    </div>
-                                </div>
+                    <div className="bg-black h-[16rem] md:h-[20rem] w-full"></div>
+                    <div className="pt-20 md:pt-28 mb-32">
+                        <div className="px-5 md:px-0 md:w-[50%] mx-auto">
+                            <h4 className="text-xl md:text-2xl mb-5 font-bold leading-relaxed md:leading-relaxed">
+                                The Sill was founded on this simple premise—plants make us happier, healthier humans.
+                            </h4>
+                            <div className="w-full">
+                                <Image src={AboutImg} alt="pay for it" className="h-[16rem] md:h-[24rem] object-fit object-cover rounded-lg" />
+                            </div>
+                            <div className="mt-6 md:mt-12 flex flex-col gap-7">
+                                <p className="text-base leading-loose">
+                                    NovaTradar is a pioneering agricultural platform dedicated to transforming the way farmers and businesses connect. Our journey began with a commitment to bridging the gap between farmers and companies, fostering growth, efficiency, and a more sustainable agricultural ecosystem.
+                                </p>
+
+                                <p className="leading-loose">
+                                    NovaTradar is a pioneering agricultural platform dedicated to transforming the way farmers and businesses connect. Our journey began with a commitment to bridging the gap between farmers and companies, fostering growth, efficiency, and a more sustainable agricultural ecosystem.
+                                </p>
+
+                                <p className="leading-loose">
+                                    NovaTradar is a pioneering agricultural platform dedicated to transforming the way farmers and businesses connect. Our journey began with a commitment to bridging the gap between farmers and companies, fostering growth, efficiency, and a more sustainable agricultural ecosystem.
+                                </p>
+
+                                <p className="leading-loose">
+                                    NovaTradar is a pioneering agricultural platform dedicated to transforming the way farmers and businesses connect. Our journey began with a commitment to bridging the gap between farmers and companies, fostering growth, efficiency, and a more sustainable agricultural ecosystem.
+                                </p>
                             </div>
                         </div>
                     </div>
