@@ -2,9 +2,6 @@
 
 import Image from "next/image";
 
-import _1 from "@/assets/images/_1.jpg";
-import _2 from "@/assets/images/_2.jpg";
-
 import Big1 from "@/assets/images/big1.jpg";
 import Big2 from "@/assets/images/big2.jpg";
 import Big3 from "@/assets/images/big3.jpg";
