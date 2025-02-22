@@ -3,7 +3,6 @@
 
 import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/translations';
-import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 import DisplayLayout from "@/components/layout";
 import { Input } from "antd";
