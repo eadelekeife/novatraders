@@ -11,6 +11,7 @@ import USImg from "@/assets/images/logo/us.png";
 import FrImg from "@/assets/images/logo/fr.png";
 import ArImg from "@/assets/images/logo/ar.png";
 import RuImg from "@/assets/images/logo/ru.png";
+import Logo from "@/assets/images/lolo.png";
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -92,8 +93,7 @@ const Navigation = () => {
                     <div>
                         <Link href="/">
                             <div className="flex gap-3 items-center">
-                                <div className="h-12 md:h-12 w-16 md:w-20 bg-primary rounded-full"></div>
-                                <h4 className={`font-bold text-lg md:text-xl text-white`}>NovaTradar</h4>
+                                <Image src={Logo} alt="logo" className="w-auto h-[50px]" />
                             </div>
                         </Link>
                     </div>
@@ -200,10 +200,11 @@ const Navigation = () => {
                         <div className="relative h-full">
                             <div className="pb-2 py-5 px-4 flex items-center justify-between">
                                 <Link href="/">
-                                    <div className="flex gap-3 items-center">
+                                    {/* <Image src={Logo} alt="logo" className="w-auto h-[50px]" /> */}
+                                    {/* <div className="flex gap-3 items-center">
                                         <div className="h-10 md:h-14 w-16 md:w-20 bg-primary"></div>
                                         <h4 className={`font-bold text-xl text-black`}>NovaApp</h4>
-                                    </div>
+                                    </div> */}
                                 </Link>
                                 <FaTimes onClick={toggleDisplayDrawer} className="text-[#FF0000] text-3xl" />
                             </div>

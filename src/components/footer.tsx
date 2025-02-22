@@ -1,11 +1,15 @@
 import Link from "next/link";
 
+import Logo from "@/assets/images/lolo.png";
+import Image from "next/image";
+
 const Footer = () => {
     return (
         <div>
             <div className="px-5 md:px-20 pt-20 pb-10 bg-[#0B1416]">
                 <div className="flex flex-col md:flex-row gap-10 md:gap-0 flex justify-between">
                     <div>
+                        <Image src={Logo} alt="logo" className="w-auto h-[50px] mb-10" />
                         <div className="flex flex-col md:flex-row gap-10 md:gap-20">
                             <div>
                                 <h5 className="text-sm md:text-base text-white mb-2 md:mb-4">Email address</h5>
