@@ -106,7 +106,7 @@ const Navigation = () => {
                                 <Link className={`text-sm opacity-70 text-white `} href="/about">About Us</Link>
                             </li>
                             <li>
-                                <Link className={`text-sm opacity-70 text-white `} href="/shop">Shop</Link>
+                                <Link className={`text-sm opacity-70 text-white `} href="/products">Our Products</Link>
                             </li>
                             <li>
                                 <Link className={`text-sm opacity-70 text-white `} href="contact">Contact Us</Link>
@@ -140,9 +140,32 @@ const Navigation = () => {
                             </li>
                         </ul>
                     </div>
-                    <div onClick={toggleDisplayDrawer} className="block md:hidden">
-                        <HiMenuAlt3 className={`text-3xl text-white`} />
-                    </div>
+                    <ul className="flex gap-2 items-center md:hidden">
+                        <div>
+                            <Dropdown menu={{ items }}>
+                                <a onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                        <div className="flex items-center pt-2">
+                                            {
+                                                currentCountry === "en" ?
+                                                    <Image src={USImg} alt="USImg" className="w-auto h-[20px]" />
+                                                    : currentCountry === "ru" ?
+                                                        <Image src={RuImg} alt="USImg" className="w-auto h-[20px]" />
+                                                        : currentCountry === "ar" ?
+                                                            <Image src={ArImg} alt="USImg" className="w-auto h-[20px]" />
+                                                            :
+                                                            <Image src={FrImg} alt="USImg" className="w-auto h-[20px]" />
+                                            }
+                                            <MdKeyboardArrowDown className="text-2xl text-white" />
+                                        </div>
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+                        <div onClick={toggleDisplayDrawer}>
+                            <HiMenuAlt3 className={`text-3xl text-white`} />
+                        </div>
+                    </ul>
                     <Modal open={openMenu} onClose={toggleMenuDisplay} onCancel={toggleMenuDisplay} footer={null}>
                         <h4 className="text-xl md:text-2xl mb-10 font-bold text-center">Get a Free Quote</h4>
                         <div className="grid grid-cols-2 gap-5 mb-5 items-center">
@@ -193,7 +216,7 @@ const Navigation = () => {
                                     <Link href="/about">About Us</Link></li>
                                 <li onClick={toggleDisplayDrawer}
                                     className="text-sm font-medium text-black font-worksans border-b border-solid border-[#F2F2F2] px-4 py-5">
-                                    <Link href="/shop">Shop</Link></li>
+                                    <Link href="/products">Our Products</Link></li>
                                 <li onClick={toggleDisplayDrawer}
                                     className="text-sm font-medium text-black font-worksans border-b border-solid border-[#F2F2F2] px-4 py-5">
                                     <Link href="/contact"> Contact Us</Link></li>

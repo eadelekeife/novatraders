@@ -28,7 +28,7 @@ export default function Contact() {
                   <div className="flex justify-between items-center">
                     <div>
                       <h5 className="text-sm md:text-base text-black mb-4 opacity-80">{t.emailAddress}</h5>
-                      <a href="mailTo:help@novatraders.com" className="text-lg md:text-2xl font-medium">help@novatraders.com</a>
+                      <a href="mailTo:help@novatraders.com" className="text-lg md:text-2xl font-medium">support@novatradar.com</a>
                     </div>
                     <div></div>
                   </div>
