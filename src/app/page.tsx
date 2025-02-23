@@ -13,7 +13,7 @@ import Link from "next/link";
 
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/translations";
-import { Drawer, Modal, Tabs } from "antd";
+import { Modal, Tabs } from "antd";
 import { useState } from "react";
 
 export default function Homepage() {
@@ -23,11 +23,7 @@ export default function Homepage() {
   const { language } = useLanguage();
   const t = translations[language].home;
 
-  <Drawer open={openDrawer}>
-    <div></div>
-  </Drawer>
-
-  const toggleModalDisplay = () => setOpenDrawer(true);
+  const toggleModalDisplay = () => setOpenDrawer(!openDrawer);
 
   return (
     <div>
