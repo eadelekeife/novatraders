@@ -16,16 +16,6 @@ export const translations: Translations = {
       topic: "Get in touch",
       location: "Location"
     },
-    about: {
-      story: "NovaTradar is a pioneering agricultural platform dedicated to transforming the way farmers and businesses connect. Our journey began with a commitment to bridging the gap between farmers and companies, fostering growth, efficiency, and a more sustainable agricultural ecosystem.",
-      values: "Our Core Values",
-      gridTitle1: "Empowering Agricultural Connection",
-      gridTitle2: "Sustainable Growth Commitment",
-      gridTitle3: "Collaborative Partnership Network",
-      gridStory1: "We equip farmers and businesses with the tools, connections, and resources they need to thrive in the agricultural industry.",
-      gridStory2: "We promote eco-friendly farming and responsible business practices to ensure a greener and more sustainable future for agriculture.",
-      gridStory3: "We foster strong partnerships between farmers and businesses, creating a seamless supply chain that drives mutual growth and success.",
-    },
     home: {
       heroTitle: "Smarter Solutions for a Sustainable Farming Future.",
       heroBody: "Driving innovation in agriculture to boost efficiency, reduce environmental impact, and create a more sustainable future for farming.",
@@ -40,6 +30,26 @@ export const translations: Translations = {
       bottomTitle: "Improving Farming With Innovative Ideas For The Future.",
       bottomStory: "NovaTradar is at the forefront of agricultural innovation, driving change through creative solutions that enhance farming practices. Our achievements reflect our dedication to improving productivity and sustainability in the industry, positioning us as leaders in transforming the future of agriculture.",
       bottomTag: "",
+    },
+    about: {
+      story: "Smarter Solutions for a Sustainable Farming Future.",
+      sect1: "Welcome to NovaTradar, your trusted partner in connecting global businesses with top Ukrainian manufacturers in agriculture and construction. At NovaTradar, we're more than traders—we’re your radar, constantly scanning the market to bring you the best opportunities, reliable partners, and competitive rates.",
+      sect2: "Ukraine is a global leader in high-quality agricultural and construction products, from grains and sunflower oil to machinery and building materials. With NovaTradar, you gain direct access to this thriving market, ensuring your business stays ahead.",
+      sect3: "NovaTradar is your gateway to Ukraine’s dynamic market. Join the global businesses that trust us to deliver premium products and reliable partnerships.",
+      sect4: "Let NovaTradar be your radar in trade. Together, we’ll uncover opportunities and build lasting success.",
+      sect5: "Get in touch today—because with NovaTradar, you’re always on the radar."
+    },
+    nav: {
+      about: "About Us",
+      home: "Home",
+      products: "Our Products",
+      contact: "Contact Us",
+      quote: "Get a Quote",
+      whatsapp: "Chat on Whatsapp",
+      emailAddress: 'Email address',
+      phone: 'Phone number',
+      copyright: "Copyright Novatradar",
+      company: "Company"
     }
   },
   fr: {
@@ -54,17 +64,15 @@ export const translations: Translations = {
       phone: 'Numéro de téléphone',
       fullName: 'Nom complet',
       topic: "Prenez contact",
-      location: "Emplacement"
+      location: "Emplacement",
     },
     about: {
-      story: "NovaTradar est une plateforme agricole pionnière dédiée à transformer la manière dont les agriculteurs et les entreprises se connectent. Notre voyage a commencé par un engagement à combler le fossé entre les agriculteurs et les entreprises, favorisant la croissance, l'efficacité et un écosystème agricole plus durable.",
-      values: "Nos valeurs fondamentales",
-      gridTitle1: "Renforcement des connexions agricoles",
-      gridTitle2: "Engagement pour une croissance durable",
-      gridTitle3: "Réseau de partenariat collaboratif",
-      gridStory1: "Nous équipons les agriculteurs et les entreprises des outils, des connexions et des ressources dont ils ont besoin pour prospérer dans l'industrie agricole.",
-      gridStory2: "Nous promouvons une agriculture respectueuse de l’environnement et des pratiques commerciales responsables pour garantir un avenir plus vert et durable à l’agriculture.",
-      gridStory3: "Nous favorisons des partenariats solides entre les agriculteurs et les entreprises, créant une chaîne d'approvisionnement fluide qui stimule la croissance et le succès mutuels.",
+      story: "Des solutions plus intelligentes pour un avenir agricole durable.",
+      sect1: "Bienvenue chez NovaTradar, votre partenaire de confiance pour connecter les entreprises mondiales aux meilleurs fabricants ukrainiens dans les secteurs de l'agriculture et de la construction. Chez NovaTradar, nous sommes plus que de simples commerçants—nous sommes votre radar, scrutant en permanence le marché pour vous offrir les meilleures opportunités, des partenaires fiables et des tarifs compétitifs.",
+      sect2: "L'Ukraine est un leader mondial dans les produits agricoles et de construction de haute qualité, allant des céréales et de l'huile de tournesol aux machines et aux matériaux de construction. Avec NovaTradar, vous accédez directement à ce marché florissant, garantissant que votre entreprise reste en avance.",
+      sect3: "NovaTradar est votre passerelle vers le marché dynamique ukrainien. Rejoignez les entreprises mondiales qui nous font confiance pour fournir des produits haut de gamme et des partenariats fiables.",
+      sect4: "Laissez NovaTradar être votre radar dans le commerce. Ensemble, nous découvrirons des opportunités et construirons un succès durable.",
+      sect5: "Contactez-nous dès aujourd’hui—parce qu’avec NovaTradar, vous êtes toujours sur le radar."
     },
     home: {
       heroTitle: "Des solutions plus intelligentes pour un avenir agricole durable.",
@@ -80,6 +88,18 @@ export const translations: Translations = {
       bottomTitle: "Améliorer l'agriculture avec des idées innovantes pour l'avenir.",
       bottomStory: "NovaTradar est à la pointe de l'innovation agricole, initiant le changement grâce à des solutions créatives qui améliorent les pratiques agricoles. Nos réalisations reflètent notre engagement à améliorer la productivité et la durabilité dans le secteur, nous positionnant en tant que leaders dans la transformation de l'avenir de l'agriculture.",
       bottomTag: ""
+    },
+    nav: {
+      about: "À propos de nous",
+      home: "Accueil",
+      products: "Nos Produits",
+      contact: "Contactez-nous",
+      quote: "Obtenir un devis",
+      whatsapp: "Discuter sur WhatsApp",
+      emailAddress: 'Adresse e-mail',
+      phone: 'Numéro de téléphone',
+      copyright: "Droits d’auteur © NovaTradar",
+      company: "Entreprise"
     }
   },
   ru: {
@@ -97,14 +117,12 @@ export const translations: Translations = {
       location: "Местоположение"
     },
     about: {
-      story: "NovaTradar — это передовая аграрная платформа, посвященная трансформации способов связи между фермерами и бизнесом. Наш путь начался с обязательства сократить разрыв между фермерами и компаниями, способствуя росту, эффективности и более устойчивой аграрной экосистеме.",
-      values: "Наши основные ценности",
-      gridTitle1: "Усиление сельскохозяйственных связей",
-      gridTitle2: "Обязательство устойчивого роста",
-      gridTitle3: "Сеть совместного партнерства",
-      gridStory1: "Мы обеспечиваем фермеров и предприятия инструментами, связями и ресурсами, необходимыми для процветания в сельскохозяйственной отрасли.",
-      gridStory2: "Мы продвигаем экологически чистое сельское хозяйство и ответственные бизнес-практики, чтобы обеспечить более зеленое и устойчивое будущее для аграрной отрасли.",
-      gridStory3: "Мы способствуем созданию прочных партнерских отношений между фермерами и бизнесом, создавая бесперебойную цепочку поставок, которая способствует взаимному росту и успеху.",
+      story: "Умные решения для устойчивого сельского хозяйства будущего.",
+      sect1: "Добро пожаловать в NovaTradar, вашего надежного партнера в соединении мировых компаний с ведущими украинскими производителями в сельском хозяйстве и строительстве. В NovaTradar мы не просто торговцы—мы ваш радар, который постоянно сканирует рынок, чтобы предложить вам лучшие возможности, надежных партнеров и конкурентоспособные цены.",
+      sect2: "Украина является мировым лидером в производстве высококачественной сельскохозяйственной и строительной продукции: от зерна и подсолнечного масла до техники и строительных материалов. С NovaTradar вы получаете прямой доступ к этому процветающему рынку, что помогает вашему бизнесу всегда быть впереди.",
+      sect3: "NovaTradar — ваш проводник на динамичном украинском рынке. Присоединяйтесь к мировым компаниям, которые доверяют нам поставки премиальной продукции и надежное партнерство.",
+      sect4: "Позвольте NovaTradar быть вашим радаром в торговле. Вместе мы откроем новые возможности и построим долгосрочный успех.",
+      sect5: "Свяжитесь с нами сегодня—ведь с NovaTradar вы всегда на радаре."
     },
     home: {
       heroTitle: "Умные решения для устойчивого будущего сельского хозяйства.",
@@ -120,6 +138,18 @@ export const translations: Translations = {
       bottomTitle: "Улучшение сельского хозяйства с помощью инновационных идей для будущего.",
       bottomStory: "NovaTradar находится на переднем крае сельскохозяйственных инноваций, продвигая изменения с помощью креативных решений, которые улучшают сельскохозяйственные практики. Наши достижения отражают нашу преданность улучшению производительности и устойчивости в отрасли, позиционируя нас как лидеров в трансформации будущего сельского хозяйства.",
       bottomTag: "",
+    },
+    nav: {
+      about: "О нас",
+      home: "Главная",
+      products: "Наши продукты",
+      contact: "Свяжитесь с нами",
+      quote: "Получить предложение",
+      whatsapp: "Чат в WhatsApp",
+      emailAddress: 'Адрес электронной почты',
+      phone: 'Номер телефона',
+      copyright: "Авторские права © NovaTradar",
+      company: "Компания"
     }
   },
   ar: {
@@ -137,14 +167,12 @@ export const translations: Translations = {
       location: "موقع"
     },
     about: {
-      story: "NovaTradar هي منصة زراعية رائدة مكرسة لتحويل طريقة تواصل المزارعين والشركات. بدأت رحلتنا بالتزام بسد الفجوة بين المزارعين والشركات، وتعزيز النمو والكفاءة ونظام زراعي أكثر استدامة.",
-      values: "قيمنا الأساسية",
-      gridTitle1: "تمكين الروابط الزراعية",
-      gridTitle2: "التزام بالنمو المستدام",
-      gridTitle3: "شبكة الشراكة التعاونية",
-      gridStory1: "نزوّد المزارعين والشركات بالأدوات والاتصالات والموارد التي يحتاجونها للازدهار في قطاع الزراعة.",
-      gridStory2: "حن نروج للزراعة الصديقة للبيئة والممارسات التجارية المسؤولة لضمان مستقبل أكثر خضرة واستدامة للزراعة.",
-      gridStory3: "نحن نعزز شراكات قوية بين المزارعين والشركات، مما يخلق سلسلة توريد سلسة تدفع نحو النمو والنجاح المتبادل.",
+      story: "حلول أذكى من أجل مستقبل زراعي مستدام.",
+      sect1: "مرحبًا بك في NovaTradar، شريكك الموثوق في ربط الشركات العالمية بأفضل الشركات المصنعة الأوكرانية في الزراعة والبناء. في NovaTradar، نحن أكثر من مجرد تجار—نحن رادارك، نراقب السوق باستمرار لنقدم لك أفضل الفرص والشركاء الموثوقين والأسعار التنافسية.",
+      sect2: "تعد أوكرانيا رائدة عالميًا في المنتجات الزراعية ومواد البناء عالية الجودة، من الحبوب وزيت عباد الشمس إلى الآلات ومواد البناء. مع NovaTradar، يمكنك الوصول المباشر إلى هذا السوق المزدهر، مما يضمن تقدم عملك دائمًا.",
+      sect3: "NovaTradar هو بوابتك إلى السوق الأوكراني الديناميكي. انضم إلى الشركات العالمية التي تثق بنا لتوفير منتجات متميزة وشراكات موثوقة.",
+      sect4: "دع NovaTradar يكون رادارك في التجارة. معًا، سنكشف عن الفرص ونبني نجاحًا مستدامًا.",
+      sect5: "تواصل معنا اليوم—لأنك مع NovaTradar، دائمًا على الرادار."
     },
     home: {
       heroTitle: "حلول أذكى لمستقبل زراعي مستدام.",
@@ -160,6 +188,19 @@ export const translations: Translations = {
       bottomTitle: "تحسين الزراعة بأفكار مبتكرة للمستقبل.",
       bottomStory: "تتقدم NovaTradar في مجال الابتكار الزراعي، محركة التغيير من خلال حلول إبداعية تعزز الممارسات الزراعية.تعكس إنجازاتنا التزامنا بتحسين الإنتاجية والاستدامة في الصناعة، مما يضعنا كقادة في تحويل مستقبل الزراعة.",
       bottomTag: "",
+    },
+    nav: {
+      about: "عنا",
+      home: "الرئيسية",
+      products: "منتجاتنا",
+      contact: "اتصل بنا",
+      quote: "احصل على عرض سعر",
+      whatsapp: "الدردشة على واتساب",
+
+      emailAddress: 'عنوان البريد الإلكتروني',
+      phone: 'رقم الهاتف',
+      copyright: "حقوق النشر © NovaTradar",
+      company: "شركة"
     }
   }
 };

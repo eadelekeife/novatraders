@@ -15,14 +15,17 @@ import Logo from "@/assets/images/lolo.png";
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { translations } from "@/translations";
 
 const Navigation = () => {
 
-    const { setLanguage } = useLanguage();
+    const { language, setLanguage } = useLanguage();
     const [, setFixed] = useState(false);
     const [currentCountry, setCurrentCountry] = useState("en");
     const [openDrawer, setOpenDrawer] = useState(false);
     const [openMenu, setOpenMenu] = useState(false);
+
+    const t = translations[language].nav;
 
     const toggleDisplayDrawer = () => setOpenDrawer(!openDrawer);
     const toggleMenuDisplay = () => setOpenMenu(!openMenu);
@@ -100,16 +103,16 @@ const Navigation = () => {
                     <div className="hidden md:block">
                         <ul className="flex gap-10 items-center cursor-pointer">
                             <li>
-                                <Link className={`text-sm opacity-70 text-white `} href="/">Home</Link>
+                                <Link className={`text-sm opacity-70 text-white `} href="/">{t.home}</Link>
                             </li>
                             <li>
-                                <Link className={`text-sm opacity-70 text-white `} href="/about">About Us</Link>
+                                <Link className={`text-sm opacity-70 text-white `} href="/about">{t.about}</Link>
                             </li>
                             <li>
-                                <Link className={`text-sm opacity-70 text-white `} href="/products">Our Products</Link>
+                                <Link className={`text-sm opacity-70 text-white `} href="/products">{t.products}</Link>
                             </li>
                             <li>
-                                <Link className={`text-sm opacity-70 text-white `} href="contact">Contact Us</Link>
+                                <Link className={`text-sm opacity-70 text-white `} href="contact">{t.contact}</Link>
                             </li>
                             <li className="pt-2">
                                 <Dropdown menu={{ items }}>
@@ -135,7 +138,7 @@ const Navigation = () => {
                         <ul className="flex gap-2">
                             <li>
                                 <Link href="#" onClick={toggleMenuDisplay} className="bg-primary rounded-full py-5 px-10 text-center text-black font-medium">
-                                    Get a Quote
+                                    {t.quote}
                                 </Link>
                             </li>
                         </ul>
@@ -147,11 +150,11 @@ const Navigation = () => {
                                     <Space>
                                         <div className="flex items-center pt-2">
                                             {
-                                                currentCountry === "en" ?
+                                                language === "en" ?
                                                     <Image src={USImg} alt="USImg" className="w-auto h-[20px]" />
-                                                    : currentCountry === "ru" ?
+                                                    : language === "ru" ?
                                                         <Image src={RuImg} alt="USImg" className="w-auto h-[20px]" />
-                                                        : currentCountry === "ar" ?
+                                                        : language === "ar" ?
                                                             <Image src={ArImg} alt="USImg" className="w-auto h-[20px]" />
                                                             :
                                                             <Image src={FrImg} alt="USImg" className="w-auto h-[20px]" />
@@ -211,28 +214,28 @@ const Navigation = () => {
                             <ul className="flex flex-col w-full gap-0">
                                 <li onClick={toggleDisplayDrawer}
                                     className="text-sm font-medium text-black font-worksans border-b border-solid border-[#F2F2F2] px-4 py-5">
-                                    <Link href="/">Home</Link></li>
+                                    <Link href="/">{t.home}</Link></li>
                                 <li onClick={toggleDisplayDrawer}
                                     className="text-sm font-medium text-black font-worksans border-b border-solid border-[#F2F2F2] px-4 py-5">
-                                    <Link href="/about">About Us</Link></li>
+                                    <Link href="/about">{t.about}</Link></li>
                                 <li onClick={toggleDisplayDrawer}
                                     className="text-sm font-medium text-black font-worksans border-b border-solid border-[#F2F2F2] px-4 py-5">
-                                    <Link href="/products">Our Products</Link></li>
+                                    <Link href="/products">{t.products}</Link></li>
                                 <li onClick={toggleDisplayDrawer}
                                     className="text-sm font-medium text-black font-worksans border-b border-solid border-[#F2F2F2] px-4 py-5">
-                                    <Link href="/contact"> Contact Us</Link></li>
+                                    <Link href="/contact"> {t.contact}</Link></li>
                                 <li onClick={() => {
                                     toggleDisplayDrawer();
                                     toggleMenuDisplay();
                                 }}
                                     className="text-sm font-medium text-black font-worksans border-b border-solid border-[#F2F2F2] px-4 py-5">
-                                    <Link href="#">Get a Quote</Link></li>
+                                    <Link href="#">{t.quote}</Link></li>
                                 <li onClick={() => {
                                     toggleDisplayDrawer();
                                 }}
                                     className="text-sm font-medium text-black font-worksans border-b border-solid border-[#F2F2F2] px-4 py-5">
                                     <a target="_blank"
-                                        href="https://wa.me/+380936018625?text=Hello%20there,%20I%20want%20to%20make%20enquiries"> Chat on Whatsapp</a></li>
+                                        href="https://wa.me/+380936018625?text=Hello%20there,%20I%20want%20to%20make%20enquiries"> {t.whatsapp}</a></li>
                             </ul>
                             <div className="absolute bottom-20 w-full">
                                 <div className="flex items-center w-max mx-auto border-2 border-solid border-black px-10 pb-2 pt-3">
@@ -241,11 +244,11 @@ const Navigation = () => {
                                             <Space>
                                                 <div className="flex items-center">
                                                     {
-                                                        currentCountry === "en" ?
+                                                        language === "en" ?
                                                             <Image src={USImg} alt="USImg" className="w-auto h-[20px]" />
-                                                            : currentCountry === "ru" ?
+                                                            : language === "ru" ?
                                                                 <Image src={RuImg} alt="USImg" className="w-auto h-[20px]" />
-                                                                : currentCountry === "ar" ?
+                                                                : language === "ar" ?
                                                                     <Image src={ArImg} alt="USImg" className="w-auto h-[20px]" />
                                                                     :
                                                                     <Image src={FrImg} alt="USImg" className="w-auto h-[20px]" />

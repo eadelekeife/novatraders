@@ -2,8 +2,14 @@ import Link from "next/link";
 
 import Logo from "@/assets/images/lolo.png";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/translations";
 
 const Footer = () => {
+
+    const { language } = useLanguage();
+    const t = translations[language].nav;
+
     return (
         <div>
             <div className="px-5 md:px-20 pt-20 pb-10 bg-[#0B1416]">
@@ -12,30 +18,30 @@ const Footer = () => {
                         <Image src={Logo} alt="logo" className="w-auto h-[50px] mb-10" />
                         <div className="flex flex-col md:flex-row gap-10 md:gap-20">
                             <div>
-                                <h5 className="text-sm md:text-base text-white mb-2 md:mb-4">Email address</h5>
+                                <h5 className="text-sm md:text-base text-white mb-2 md:mb-4">{t.emailAddress}</h5>
                                 <a className="text-white text-lg md:text-2xl" href="mailTo:help@novatradar.com" target="_blank">help@novatradar.com</a>
                             </div>
                             <div>
-                                <h5 className="text-sm md:text-base text-white mb-2 md:mb-4">Phone number</h5>
+                                <h5 className="text-sm md:text-base text-white mb-2 md:mb-4">{t.phone}</h5>
                                 <a className="text-white text-lg md:text-2xl" href="mailTo:+380936018625" target="_blank">(+380) 936 01 8625</a>
                             </div>
                         </div>
                     </div>
                     <div className="flex gap-40 text-white">
                         <div>
-                            <h5 className="mb-5 text-base tracking-wide font-bold">Company</h5>
+                            <h5 className="mb-5 text-base tracking-wide font-bold">{t.company}</h5>
                             <ul className="flex flex-col gap-5">
                                 <li>
-                                    <Link href="" className="text-sm opacity-80">Home</Link>
+                                    <Link href="" className="text-sm opacity-80">{t.home}</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-sm opacity-80">About Us</Link>
+                                    <Link href="" className="text-sm opacity-80">{t.about}</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-sm opacity-80">Shop</Link>
+                                    <Link href="" className="text-sm opacity-80">{t.products}</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-sm opacity-80">Contact Us</Link>
+                                    <Link href="" className="text-sm opacity-80">{t.contact}</Link>
                                 </li>
                             </ul>
                         </div>
@@ -62,7 +68,7 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row gap-10 md:gap-0 justify-between md:items-center mt-14">
                     <div>
                         <p className="text-white text-sm opacity-80">
-                            &copy; {new Date().getFullYear()} &mdash; Copyright Novatradar
+                            &copy; {new Date().getFullYear()} &mdash; {t.copyright}
                         </p>
                     </div>
                     <div>

@@ -17,10 +17,81 @@ import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/translations";
 
+import { IoFilter } from "react-icons/io5";
+import type { MenuProps } from 'antd';
+import { Dropdown } from 'antd';
 
 export default function Homepage() {
   const { language } = useLanguage();
   const t = translations[language].home;
+
+  const items: MenuProps['items'] = [
+    {
+      key: '1',
+      label: (
+        <div>
+          <p>Home</p>
+        </div>
+      ),
+    },
+    {
+      key: '2',
+      label: (
+        <div>
+          <p>Food and Beverages</p>
+        </div>
+      ),
+    },
+    {
+      key: '3',
+      label: (
+        <div>
+          <p>Cereals and Oils</p>
+        </div>
+      )
+    },
+    {
+      key: '4',
+      label: (
+        <div>
+          <p>Honey</p>
+        </div>
+      )
+    },
+    {
+      key: '5',
+      label: (
+        <div>
+          <p>Construction Materials</p>
+        </div>
+      )
+    },
+    {
+      key: '6',
+      label: (
+        <div>
+          <p>Fruits and Berries</p>
+        </div>
+      )
+    },
+    {
+      key: '7',
+      label: (
+        <div>
+          <p>Vegetables</p>
+        </div>
+      )
+    },
+    {
+      key: '8',
+      label: (
+        <div>
+          <p>Meat</p>
+        </div>
+      )
+    }
+  ];
+
   return (
     <div>
       <DisplayLayout>
@@ -40,8 +111,101 @@ export default function Homepage() {
               </div>
             </div>
           </div>
-          <div className="px-5 md:px-20 mt-24">
-            <div className="flex flex-col md:grid grid-cols-1/2 mt-14 gap-5 md:gap-20 items-start">
+          <div className="px-5 md:px-20 mt-24 mb-14">
+            <div className="w-full">
+              <div className="">
+                {/* <div className="h-[12rem] md:h-[20rem] mb-14 rounded-3xl w-full bg-[#F1F1F1]"></div> */}
+                <div className="flex justify-between items-center mb-2">
+                  <h3 className="text-xl md:text-2xl font-bold">Our Products</h3>
+                  <div className="">
+                    <Link href="/products" className="text-black text-lg border-b-2 border-solid border-black">View More</Link>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 gap-y-10 md:gap-10">
+                  <div className="">
+                    <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
+                    <div className="mt-2 md:mt-5">
+                      <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
+                      <p className="mt-1 md:mt-3 text-black opacity-80">
+                        <span className="text-sm uppercas">NGN</span>
+                        <span className="text-sm md:text-lg">15,000.00</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
+                    <div className="mt-2 md:mt-5">
+                      <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
+                      <p className="mt-1 md:mt-3 text-black opacity-80">
+                        <span className="text-sm uppercas">NGN</span>
+                        <span className="text-sm md:text-lg">15,000.00</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
+                    <div className="mt-2 md:mt-5">
+                      <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
+                      <p className="mt-1 md:mt-3 text-black opacity-80">
+                        <span className="text-sm uppercas">NGN</span>
+                        <span className="text-sm md:text-lg">15,000.00</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
+                    <div className="mt-2 md:mt-5">
+                      <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
+                      <p className="mt-1 md:mt-3 text-black opacity-80">
+                        <span className="text-sm uppercas">NGN</span>
+                        <span className="text-sm md:text-lg">15,000.00</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
+                    <div className="mt-2 md:mt-5">
+                      <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
+                      <p className="mt-1 md:mt-3 text-black opacity-80">
+                        <span className="text-sm uppercas">NGN</span>
+                        <span className="text-sm md:text-lg">15,000.00</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
+                    <div className="mt-2 md:mt-5">
+                      <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
+                      <p className="mt-1 md:mt-3 text-black opacity-80">
+                        <span className="text-sm uppercas">NGN</span>
+                        <span className="text-sm md:text-lg">15,000.00</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
+                    <div className="mt-2 md:mt-5">
+                      <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
+                      <p className="mt-1 md:mt-3 text-black opacity-80">
+                        <span className="text-sm uppercas">NGN</span>
+                        <span className="text-sm md:text-lg">15,000.00</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
+                    <div className="mt-2 md:mt-5">
+                      <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
+                      <p className="mt-1 md:mt-3 text-black opacity-80">
+                        <span className="text-sm uppercas">NGN</span>
+                        <span className="text-sm md:text-lg">15,000.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <div className="flex flex-col md:grid grid-cols-1/2 mt-14 gap-5 md:gap-20 items-start">
               <div className="hidden md:flex gap-2 items-center">
                 <div className="size-2 bg-black rounded-full"></div>
                 <p className="w-full md:leading-relaxed leading-relaxed text-base md:text-xl">{t.belowTitle}?</p>
@@ -50,8 +214,6 @@ export default function Homepage() {
                 <h4 className="w-[80%] md:w-full text-xl md:text-4xl md:w-[50%] mb-2 md:mb-4 leading-normal md:leading-normal font-bold">
                   {t.belowBody}
                 </h4>
-                {/* <p className="text-xl md:text-3xl font-medium mb-3 md:leading-relaxed leading-relaxed">
-                  With years of experience in both farming and tech, we are committed to helping farmers grow smarter and achieve better yields. Together, we are shaping the future of farming for a more sustainable world.</p> */}
                 <p className="text-sm md:text-lg md:leading-loose leading-loose">
                   {t.belowTag}
                 </p>
@@ -64,7 +226,7 @@ export default function Homepage() {
             <div className="flex flex-col md:grid grid-cols-1/2 mt-7 md:mt-14 gap-5 md:gap-10 items-start">
               <Image src={Sub1} alt="nkwn" className="h-[20rem] md:h-[25rem] rounded-2xl object-fit object-cover" />
               <Image src={Sub2} alt="nkwn" className="hidden md:block h-[20rem] md:h-[25rem] rounded-2xl object-fit object-cover" />
-            </div>
+            </div> */}
           </div>
           <div className="bg-black mt-20 md:mt-32 px-5 md:px-20 py-20 md:py-32">
             <div className="md:w-[75%]">

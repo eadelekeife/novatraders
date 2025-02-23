@@ -15,15 +15,26 @@ export interface TranslationContent {
     location: string;
 }
 
+export interface NavContent {
+    about: string;
+    home: string;
+    products: string;
+    contact: string;
+    quote: string;
+    copyright?: string;
+    whatsapp?: string;
+    emailAddress?: string;
+    phone?: string;
+    company: string;
+}
+
 export interface AboutContent {
     story: string;
-    values: string;
-    gridTitle1: string;
-    gridStory1: string;
-    gridTitle2: string;
-    gridStory2: string;
-    gridTitle3: string;
-    gridStory3: string;
+    sect1: string;
+    sect2: string;
+    sect3: string;
+    sect4: string;
+    sect5: string;
 }
 export interface HomeContent {
     heroTitle: string;
@@ -45,21 +56,25 @@ export interface Translations {
     en: {
         contact: TranslationContent;
         about: AboutContent,
-        home: HomeContent
+        home: HomeContent,
+        nav: NavContent
     };
     fr: {
         contact: TranslationContent;
         about: AboutContent,
-        home: HomeContent
+        home: HomeContent,
+        nav: NavContent
     };
     ru: {
         contact: TranslationContent;
         about: AboutContent,
-        home: HomeContent
+        home: HomeContent,
+        nav: NavContent
     };
     ar: {
         contact: TranslationContent;
         about: AboutContent,
-        home: HomeContent
+        home: HomeContent,
+        nav: NavContent
     }
 }
