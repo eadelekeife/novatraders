@@ -6,9 +6,6 @@ import Big1 from "@/assets/images/big1.jpg";
 import Big2 from "@/assets/images/big2.jpg";
 import Big3 from "@/assets/images/big3.jpg";
 
-import Sub1 from "@/assets/images/sub1.jpg";
-import Sub2 from "@/assets/images/sub2.jpg";
-
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import { FaArrowRightLong } from "react-icons/fa6";
 import DisplayLayout from "@/components/layout";
@@ -17,80 +14,9 @@ import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/translations";
 
-import { IoFilter } from "react-icons/io5";
-import type { MenuProps } from 'antd';
-import { Dropdown } from 'antd';
-
 export default function Homepage() {
   const { language } = useLanguage();
   const t = translations[language].home;
-
-  const items: MenuProps['items'] = [
-    {
-      key: '1',
-      label: (
-        <div>
-          <p>Home</p>
-        </div>
-      ),
-    },
-    {
-      key: '2',
-      label: (
-        <div>
-          <p>Food and Beverages</p>
-        </div>
-      ),
-    },
-    {
-      key: '3',
-      label: (
-        <div>
-          <p>Cereals and Oils</p>
-        </div>
-      )
-    },
-    {
-      key: '4',
-      label: (
-        <div>
-          <p>Honey</p>
-        </div>
-      )
-    },
-    {
-      key: '5',
-      label: (
-        <div>
-          <p>Construction Materials</p>
-        </div>
-      )
-    },
-    {
-      key: '6',
-      label: (
-        <div>
-          <p>Fruits and Berries</p>
-        </div>
-      )
-    },
-    {
-      key: '7',
-      label: (
-        <div>
-          <p>Vegetables</p>
-        </div>
-      )
-    },
-    {
-      key: '8',
-      label: (
-        <div>
-          <p>Meat</p>
-        </div>
-      )
-    }
-  ];
 
   return (
     <div>
