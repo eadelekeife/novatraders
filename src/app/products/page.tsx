@@ -1,3 +1,5 @@
+"use client";
+
 import DisplayLayout from "@/components/layout";
 import { IoFilter } from "react-icons/io5";
 import type { MenuProps } from 'antd';
