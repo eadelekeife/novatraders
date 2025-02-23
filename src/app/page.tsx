@@ -13,10 +13,21 @@ import Link from "next/link";
 
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/translations";
+import { Drawer, Modal, Tabs } from "antd";
+import { useState } from "react";
 
 export default function Homepage() {
+
+  const [openDrawer, setOpenDrawer] = useState(false);
+
   const { language } = useLanguage();
   const t = translations[language].home;
+
+  <Drawer open={openDrawer}>
+    <div></div>
+  </Drawer>
+
+  const toggleModalDisplay = () => setOpenDrawer(true);
 
   return (
     <div>
@@ -44,11 +55,11 @@ export default function Homepage() {
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="text-xl md:text-2xl font-bold">Our Products</h3>
                   <div className="">
-                    <Link href="/products" className="text-black text-lg border-b-2 border-solid border-black">View More</Link>
+                    <Link href="/products" className="text-black text-lg border-b-2 border-solid border-black">View All Products</Link>
                   </div>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 gap-y-10 md:gap-10">
-                  <div className="">
+                  <div className="" onClick={toggleModalDisplay}>
                     <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
                     <div className="mt-2 md:mt-5">
                       <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
@@ -58,7 +69,7 @@ export default function Homepage() {
                       </p>
                     </div>
                   </div>
-                  <div className="">
+                  <div className="" onClick={toggleModalDisplay}>
                     <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
                     <div className="mt-2 md:mt-5">
                       <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
@@ -68,7 +79,7 @@ export default function Homepage() {
                       </p>
                     </div>
                   </div>
-                  <div className="">
+                  <div className="" onClick={toggleModalDisplay}>
                     <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
                     <div className="mt-2 md:mt-5">
                       <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
@@ -78,7 +89,7 @@ export default function Homepage() {
                       </p>
                     </div>
                   </div>
-                  <div className="">
+                  <div className="" onClick={toggleModalDisplay}>
                     <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
                     <div className="mt-2 md:mt-5">
                       <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
@@ -88,7 +99,7 @@ export default function Homepage() {
                       </p>
                     </div>
                   </div>
-                  <div className="">
+                  <div className="" onClick={toggleModalDisplay}>
                     <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
                     <div className="mt-2 md:mt-5">
                       <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
@@ -98,7 +109,7 @@ export default function Homepage() {
                       </p>
                     </div>
                   </div>
-                  <div className="">
+                  <div className="" onClick={toggleModalDisplay}>
                     <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
                     <div className="mt-2 md:mt-5">
                       <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
@@ -108,7 +119,7 @@ export default function Homepage() {
                       </p>
                     </div>
                   </div>
-                  <div className="">
+                  <div className="" onClick={toggleModalDisplay}>
                     <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
                     <div className="mt-2 md:mt-5">
                       <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
@@ -118,7 +129,7 @@ export default function Homepage() {
                       </p>
                     </div>
                   </div>
-                  <div className="">
+                  <div className="" onClick={toggleModalDisplay}>
                     <div className="h-[12rem] md:h-[18rem] w-full bg-[#F1F1F1]"></div>
                     <div className="mt-2 md:mt-5">
                       <h4 className="text-base md:text-lg font-medium">Osopiro Rice</h4>
@@ -220,6 +231,38 @@ export default function Homepage() {
             </div>
             <div className="h-full w-full br-img"></div>
           </div>
+          <Modal open={openDrawer} onClose={toggleModalDisplay} onCancel={toggleModalDisplay} footer={null}>
+            <div className="text-center">
+              <h4 className="mb-2 text-2xl font-bold">Buy bulk maize for exports</h4>
+            </div>
+            <div className="h-[15rem] w-full bg-black rounded-xl">
+
+            </div>
+            <div className="mt-5">
+              <Tabs type="card">
+                <Tabs.TabPane tab="Description" key={1}>
+                  <p className="text-sm md:leading-loose leading-loose">
+                    Get premium yellow and white Maize
+                  </p>
+                  <p className="text-sm md:leading-loose leading-loose">
+                    Typical smell characteristic of natural grain, free from strange odors, with a bright yellow or white color depending on the variety, and free from foreign matter. NON-GMO.
+                  </p>
+                  <p className="text-sm md:leading-loose leading-loose">
+                    Our maize is carefully selected to ensure top quality, making it ideal for human consumption, animal feed, and industrial use. It is rich in essential nutrients, including carbohydrates, fiber, and vitamins.
+                  </p>
+                  <p className="text-sm md:leading-loose leading-loose">
+                    Maize is a versatile grain used in various food products, from flour and cereals to snacks and beverages.
+                  </p>
+                </Tabs.TabPane>
+                <Tabs.TabPane tab="Specifications" key={2}>
+
+                </Tabs.TabPane>
+              </Tabs>
+              <div className="flex items-center justify-center">
+                <button className="text-sm md:text-base bg-primary text-black py-5 px-12 rounded-lg md:mt-5 text-base block">Get a Quote</button>
+              </div>
+            </div>
+          </Modal>
         </>
       </DisplayLayout>
     </div>
